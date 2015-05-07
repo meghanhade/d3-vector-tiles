@@ -55,24 +55,28 @@ a.zoom:last-child {
 
 .tile {
   position: absolute;
+  /*background-color: black;*/
   width: 256px;
   height: 256px;
 }
 
+/*what is this referring to?*/
 .tile path {
   fill: none;
-  stroke: #000;
+  /*stroke: #000;*/
   stroke-linejoin: round;
   stroke-linecap: round;
 }
 
-.tile .major_road { stroke: #000; }
-.tile .minor_road { stroke: #000; }
-.tile .highway { stroke: #fa25bf; stroke-width: 1.5px; }
+.tile .major_road { stroke: lightgray; stroke-width: 1.5px}
+.tile .minor_road { stroke: lightgray; stroke-width: .75px}
+.tile .highway { stroke: lightgray; stroke-width: 1.5px; }
 /*.tile .rail { stroke: #000; }*/
-/*.tile .buildings { stroke: #45414c; fill: #aba6b3; }*/
+.tile .buildings { stroke: none; fill: lightgray; }
 /*.tile .landuse { stroke: #918b9b; fill: #a29dab; }*/
-.tile .water { stroke: #357abf; fill: #357abf; }
+/*.tile .water { stroke: #357abf; fill: #357abf; }*/
+.tile .water { fill: white; }
+.tile .leisure { fill: green; }
 
 .info {
   position: absolute;
