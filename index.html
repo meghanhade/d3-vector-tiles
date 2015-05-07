@@ -69,9 +69,9 @@ a.zoom:last-child {
 .tile .major_road { stroke: #000; }
 .tile .minor_road { stroke: #000; }
 .tile .highway { stroke: #fa25bf; stroke-width: 1.5px; }
-.tile .rail { stroke: #000; }
-.tile .buildings { stroke: #45414c; fill: #aba6b3; }
-.tile .landuse { stroke: #918b9b; fill: #a29dab; }
+/*.tile .rail { stroke: #000; }*/
+/*.tile .buildings { stroke: #45414c; fill: #aba6b3; }*/
+/*.tile .landuse { stroke: #918b9b; fill: #a29dab; }*/
 .tile .water { stroke: #357abf; fill: #357abf; }
 
 .info {
@@ -96,7 +96,6 @@ a.zoom:last-child {
 <script src="d3.geo.tile.v0.min.js"></script>
 <script src="https://cdn.rawgit.com/devTristan/pbf/master/dist/pbf.min.js"></script>
 <script src="https://rawgit.com/devTristan/vector-tile-js/master/dist/vectortile.min.js"></script>
-<!-- <script src="https://cdn.rawgit.com/mapzen/ui/0.1.1/components/bug/bug.js"></script> -->
 
 <script>
 
@@ -277,10 +276,4 @@ function zoomClick() {
 
 d3.selectAll('a.zoom').on('click', zoomClick);
 
-// initialize mapzen bug
-var mzBug = new MapzenBug({
-  name: 'Map using d3 and vector PBF',
-  link: 'https://github.com/mapzen/d3-vector-tiles',
-  twitterShareMsg: 'Wow, what cool demo by @mapzen.'
-});
 </script>
